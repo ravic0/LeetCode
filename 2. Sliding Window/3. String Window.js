@@ -1,5 +1,8 @@
-const s1 = "abcsabcqsa";
-const s2 = "ssaqb";
+const s1 = "abcsaqbcqsab";
+const s2 = "sab";
+
+// const s1 = "abcsabcqsa";
+// const s2 = "ssaqb";
 
 // const s1 = "fizzbuzz";
 // const s2 = "fuzz";
@@ -56,10 +59,16 @@ const StringWindow = (s1, s2) => {
       }
 
       windowSize = i - start + 1;
+      console.log("------------------- Changing window size");
+      console.log("i: ", i);
+      console.log("windowSize: ", windowSize);
       if (windowSize < minSoFar) {
         minSoFar = windowSize;
         startIdx = start;
+        console.log("Min so far: ", minSoFar);
+        console.log("Start idx: ", startIdx);
       }
+      console.log("------------------- Done");
     }
   }
 
